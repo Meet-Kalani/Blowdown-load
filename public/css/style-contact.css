@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: yellow;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo{
+    padding-left: 15px;
+    padding-right: 15px;
+    color:#343a40 !important;
+    background: yellow;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.contact-form {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.navigation-bar {
+    background: #343a40;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: yellow;
+    display: inline-block;
+    font-size: large;
+}
+
+.contact-heading {
+    text-align: center;
+    color: #343a40;
+}
+
+label{
+    background: #343a40;
+    color:yellow;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: -4px;
+    box-shadow: 1px 3px 5px #343a40;
+}
+
+.blackish {
+    background: #343a40;
+}
+
+.btn {
+    border: none;
+    box-shadow: 1px 3px 5px #343a40;
+    color: yellow;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #343a40;
+    box-shadow: 1px 3px 5px #343a40;
+    color: yellow;
+}
+
+.form-control {
+    border: none;
+    box-shadow: 1px 3px 5px #343a40;
+    color: yellow;
+}
+
+.form-control:focus {
+    background: #343a40;
+    color: yellow;
+}
+
+footer p {
+    color: yellow;
+    text-align: center;
+    background: #343a40;
+    padding: 15px
+}
+
+footer {
+    margin-bottom: -17px;
+}
