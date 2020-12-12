@@ -5,7 +5,7 @@ const config = require('config');
 const helmet = require('helmet');
 const download_route = require('./routes/download');
 const contact_route = require('./routes/contact');
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 // setting up various configurations and middlewares
 app.use(helmet());
