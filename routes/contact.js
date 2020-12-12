@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // routes
 app.get('/', (req, res) => {
     // setting up header for content security policy for allowing site to use javascript and css file from another site
-    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000")
+    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://blowdown-load.herokuapp.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000 https://blowdown-load.herokuapp.com")
     res.render('contact');
 })
 

@@ -28,14 +28,14 @@ if (!config.get('name') || !config.get('password')) {
 // root route handler
 app.get('/', (req, res) => {
     // setting up header for content security policy for allowing site to use javascript and css file from another site
-    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000")
+    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://blowdown-load.herokuapp.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000 https://blowdown-load.herokuapp.com")
     res.render('index');
 })
 
 // error route handler
 app.get('/:first/:second/:third', (req, res) => {
     // setting up header for content security policy for allowing site to use javascript and css file from another site
-    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000")
+    res.setHeader('Content-Security-Policy', "script-src 'unsafe-inline' https://blowdown-load.herokuapp.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://code.jquery.com; style-src 'unsafe-inline' https://cdn.jsdelivr.net http://localhost:3000 https://blowdown-load.herokuapp.com")
     res.render('error-handler');
 })
 
